@@ -31,7 +31,17 @@ token usage: answer from this bible instead of re-exploring the code.
 
 ## 2. Project Overview
 
-_TODO: what OpenHeart is, its goal, and current status._
+OpenHeart is a cheap, efficient, contactless "heartbeat"/motion sensor. It emits
+low-frequency radio waves and measures how reflected signals change over time;
+small movements (heartbeat, breathing, a person shifting in a room) perturb those
+reflections, letting the device detect motion without contact, cameras, or costly
+parts.
+
+**Goal:** a sensor that is cheap (inexpensive, widely available parts), efficient
+(low power, always-on), and contactless (senses via radio reflection).
+
+**Status:** early stage — repo currently holds docs only (README, this bible); no
+hardware/firmware code yet.
 
 ---
 
