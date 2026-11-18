@@ -47,7 +47,11 @@ hardware/firmware code yet.
 
 ## 3. File / Directory Map
 
-_TODO: where things live, so sessions don't grep to find them._
+- `README.md` — project thesis and goals.
+- `AGENTS.md` / `CLAUDE.md` — this bible and its entry point.
+- `firmware/OpenHeart/OpenHeart.ino` — Arduino sketch (C++). Reads the RF
+  front-end on `A0`, samples at ~100 Hz, streams raw values over serial.
+  (An `.ino` must live in a folder matching its name.)
 
 ---
 
@@ -59,7 +63,13 @@ _TODO: components, data flow, key decisions._
 
 ## 5. Commands
 
-_TODO: build, run, test, lint, deploy._
+Firmware (requires `arduino-cli`; set `--fqbn` for your board):
+
+- Compile: `arduino-cli compile --fqbn <board> firmware/OpenHeart`
+- Upload: `arduino-cli upload -p <port> --fqbn <board> firmware/OpenHeart`
+- Serial monitor: `arduino-cli monitor -p <port> -c baudrate=115200`
+
+Or open `firmware/OpenHeart/` in the Arduino IDE.
 
 ---
 
