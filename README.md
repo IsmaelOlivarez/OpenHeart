@@ -17,3 +17,8 @@ The goal is a sensor that is:
 - **Cheap** — built from inexpensive, widely available parts.
 - **Efficient** — low power draw suited for always-on operation.
 - **Contactless** — senses movement through radio reflection, not direct contact.
+
+## Materials Needed
+
+_TODO: to be populated — the hardware/components list will be added as the
+design is finalized._
